@@ -35,5 +35,10 @@ return [
         'client_secret' => 'SUZVyMe0AhI09-PHi5TXBUVW',
         'redirect' => 'http://proyecto.me/callback/google',
     ],
+    'github' => [
+        'client_id' => 'bbfae555e0ab58c1826b',
+        'client_secret' => 'bcd7d3659398e3b7fafe0cffd9db569df0bef32a',
+        'redirect' => 'http://proyecto.me/callback/github',
+    ],
 
 ];
