@@ -30,4 +30,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'google' => [
+        'client_id' => '264783955628-qccblecjqpvqvip11p8d45umre5oa0fk.apps.googleusercontent.com',
+        'client_secret' => 'SUZVyMe0AhI09-PHi5TXBUVW',
+        'redirect' => 'http://proyecto.me/callback/google',
+    ],
+
 ];
