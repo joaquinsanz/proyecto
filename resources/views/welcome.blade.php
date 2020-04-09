@@ -64,15 +64,24 @@
     .m-b-md {
         margin-bottom: 30px;
     }
+
+    .main-img {
+        background: url('https://cdn.pixabay.com/photo/2019/04/10/12/40/watercolour-4117017_1280.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
     </style>
 </head>
 
 <body>
-    <div class="flex-center position-ref full-height">
+    <div class="flex-center position-ref full-height ">
         @if (Route::has('login'))
         <div class="top-right links">
             @auth
-            <a href="{{ url('/home') }}">Home</a>
+            <a href="{{ url('/home') }}">Accede a tu sitio {{ Auth::user()->name }}</a>
             @else
             <a href="{{ route('login') }}">Login</a>
 
@@ -84,9 +93,8 @@
         @endif
 
 
-        <div class="jumbotron jumbotron-fluid">
-
-            <h1>Web reparto de gastos</h1>
+        <div class="content flex-center full-height main-img">
+            <h1 class="title">Web reparto de gastos</h1>
 
         </div>
     </div>
