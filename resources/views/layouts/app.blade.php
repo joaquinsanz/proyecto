@@ -37,22 +37,23 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    @auth
                     <ul class="navbar-nav mr-auto">
                         <li nav-item>
-                            <a class="nav-link" href=""> Listas de Gastos </a>
+                            <a class="nav-link" href="{{ url('/gastos') }}"> Listas de Gastos </a>
                         </li>
                         <li nav-item>
-                            <a class="nav-link" href=""> Area Personal </a>
+                            <a class="nav-link" href="{{ url('/personal') }}"> Area Personal </a>
                         </li>
                         <li nav-item>
-                            <a class="nav-link" href=""> Contacto </a>
+                            <a class="nav-link" href="{{ url('/contact-us') }}"> Contacto </a>
                         </li>
                         <li nav-item>
-                            <a class="nav-link" href=""> Configuración </a>
+                            <a class="nav-link" href="{{ url('/config') }}"> Configuración </a>
                         </li>
 
                     </ul>
-
+                    @endauth
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->

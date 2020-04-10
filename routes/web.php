@@ -1,5 +1,6 @@
 <?php
 
+use App\ContactUs;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,3 +24,27 @@ Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
 Route::get('/auth/redirect/{provider}', 'SocialController@redirect');
 Route::get('/callback/{provider}', 'SocialController@callback');
+
+// Momentario en espera de controlers
+
+Route::get('/config', function () {
+    return view('config');
+})->middleware('auth');
+
+Route::get('/gastos', function () {
+    return view('gastos');
+})->middleware('auth');
+
+Route::get('/personal', function () {
+    return view('personal');
+})->middleware('auth');
+
+//contacto controller
+
+Route::get('contact-us', 'ContactUsController@contactUs')->middleware('auth');
+
+
+Route::post('contact-us', [
+    'as' => 'contactus.store',
+    'uses' => 'ContactUsController@contactUsPost'
+]);
