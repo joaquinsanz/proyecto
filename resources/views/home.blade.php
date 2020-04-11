@@ -31,18 +31,24 @@
                         @endif
 
                         <h2>Hola, {{ Auth::user()->name }} encantado de verte de nuevo por aquí</h2>
-                        <p>A continuación encontraras tu historial de consula: </p>
-                        <ul>
-                            <li>
-                                Historial 1
-                            </li>
-                            <li>
-                                Historial 2
-                            </li>
-                            <li>
-                                Historial 3
-                            </li>
-                        </ul>
+                        {{-- aqui estará el historial 
+                        El la ultima lista es:
+                        @if (Session::get('lastlist'))
+                        {{ Session::get('lastlist')->name }}
+                        <a href="/lists/forget"> Olvidar último libro</a>
+                        @else
+                        Ninguno
+                        @endif
+                        <hr>
+                        Los libros visitrados son:
+                        @if (Session::get('lists'))
+                        @foreach(Session::get('lists') as $index => $list)
+                        <li>{{ $index }} - {{$list->name}}</li>
+                        @endforeach
+                        @else
+                        No has visto ninguno todavía
+                        @endif
+                        --}}
                     </div>
                 </div>
             </div>

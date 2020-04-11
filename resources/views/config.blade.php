@@ -31,10 +31,15 @@
                         @endif
 
                         <p>Configuración de la cuenta: </p>
-                        <form action="" method="get">
-                            <input type="text" name="" id="">
-                            <input type="text" name="" id="">
-                        </form>
+                        <div class="form-group row mb-0">
+                            <div class="col-md-8 offset-md-4">
+                                @if (Route::has('password.request'))
+                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    {{ __('¿Cambiar tu contraseña?') }}
+                                </a>
+                                @endif
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
