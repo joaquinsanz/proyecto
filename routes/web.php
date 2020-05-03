@@ -31,9 +31,7 @@ Route::get('/config', function () {
     return view('config');
 })->middleware('auth');
 
-Route::get('/gastos', function () {
-    return view('gastos');
-})->middleware('auth');
+Route::get('/listas', 'ListaController@index')->name('home')->middleware('auth');
 
 Route::get('/personal', function () {
     return view('personal');
