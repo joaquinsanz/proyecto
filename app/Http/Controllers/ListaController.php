@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Lista;
+use App\User;
 use Illuminate\Http\Request;
 
 class ListaController extends Controller
@@ -17,7 +19,8 @@ class ListaController extends Controller
     }
     public function index()
     {
-        return view('listas');
+        $listas = Lista::paginate();
+        return view('listas.index', ['listas' => $listas]);
     }
 
     /**
@@ -27,7 +30,9 @@ class ListaController extends Controller
      */
     public function create()
     {
-        //
+        $listas = Lista::all();
+        $users = User::all();
+        return view('listas.create', ['listas' => $listas, 'users' => $users]);
     }
 
     /**
@@ -38,7 +43,20 @@ class ListaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|min:5',
+            'saldo' => 'required|numeric',
+            'participantes' => 'required|exists:users,id',
+        ]);
+
+
+        $lista = new Lista();
+        $lista->name = $request->name;
+        $lista->saldo = $request->saldo;
+        $lista->participantes = $request->participantes;
+        $lista->save();
+        $listas = Lista::paginate();
+        return view('listas.index', ['listas' => $listas]);
     }
 
     /**

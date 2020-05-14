@@ -40,7 +40,7 @@
                     @auth
                     <ul class="navbar-nav mr-auto">
                         <li nav-item>
-                            <a class="nav-link" href="{{ url('/gastos') }}"> Listas de Gastos </a>
+                            <a class="nav-link" href="{{ url('/listas') }}"> Listas de Gastos </a>
                         </li>
                         <li nav-item>
                             <a class="nav-link" href="{{ url('/personal') }}"> Area Personal </a>

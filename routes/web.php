@@ -31,7 +31,9 @@ Route::get('/config', function () {
     return view('config');
 })->middleware('auth');
 
-Route::get('/listas', 'ListaController@index')->name('home')->middleware('auth');
+Route::get('/listas', 'ListaController@index')->name('listas')->middleware('auth');
+Route::get('/listas/create', 'ListaController@create')->name('create')->middleware('auth');
+Route::post('/listas', 'ListaController@store')->middleware('auth');
 
 Route::get('/personal', function () {
     return view('personal');
