@@ -83,7 +83,7 @@ En la primera columna de la tabla encontraremos el análisis interno y en la seg
 # ANÁLISIS Y DISEÑO
 
 ### Casos de uso
-![Casos de uso](img/casos_uso.png)
+![Casos de uso](img/casos_uso.PNG)
 
 ### Diagrama de clases 
 ![Diagrama de clases](img/clases.jpg)
@@ -92,7 +92,7 @@ La realización del diagrama de clases actual solamente supone un boceto de como
 En este primer boceto sólamente decimos que la vista llamará y afectará al controlador para que este haga los "procedimientos" tanto de crear, actualizar, borrar, ver y en el modelo se encontrará la lógica del objeto los valores que tiene, etc.
 
 ### Mapa navegación aplicación
-![Mapa Aplicacion](img/mapa_aplicacion.png)
+![Mapa Aplicacion](img/mapa_aplicacion.PNG)
 
 ### Diseño de interfaces
 
@@ -100,17 +100,17 @@ En cuánto al diseño de las interfaces de usuario, hemos creado una lista de la
 
 El listado de ventanas que formarán parte del flujo de la aplicación son las siguientes:
 
-![Listado de ventanas](img/contenidos.png)
+![Listado de ventanas](img/contenidos.PNG)
 
 Una vez tenemos la lista de la ventanas que serán necesarias para la aplicación, creamos el mockUp con las vistas totales que tendrá la aplicación.
 
-![Ventanas](img/contenido_vista.png)
+![Ventanas](img/contenido_vista.PNG)
 
 Esta imagen anterior es la vista general  de cada una de las vistas que tendrá la aplicación.
 
 Una vez tenemos las vistas definidas, crearemos los flujos que tendrá la aplicación y las relaciones entre cada una de las ventanas.
 
-![Ejemplo flujos](img/ejemplo_flujo.png)
+![Ejemplo flujos](img/ejemplo_flujo.PNG)
 
 A continuación adjunto el video con los flujos totales y cual será el flujo total de la aplicación, haciendo que los mockups se conviertan interactivamente en una aplicacion básica virtual.
 
@@ -129,7 +129,7 @@ Debido a esta decisión, mantendremos colores muy neutros para los mayores espac
 
 Los colores de nuestra aplicación serán los siguientes:
 
-![Gama colores](img/gama_colores.png)
+![Gama colores](img/gama_colores.PNG)
 
 La elección de los colores tiene que ver con los iconos separadores y botones que tendrá dicha aplicación. A continuación adjunto los diseños iniciales de los **iconos**:
 
@@ -150,10 +150,10 @@ La eleccion de las mismas es debido a que éstas son perfectamente reconocibles,
 
 ### Modelo de datos
 **Diagrama E-R** 
-![Modelo ER](img/Modelo_ER.png)
+![Modelo ER](img/Modelo_ER.PNG)
 
 **Modelo Relacional**
-![Modelo Relacional](img/relacional.png)
+![Modelo Relacional](img/relacional.PNG)
 
 **Script creación**
 
