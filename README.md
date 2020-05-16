@@ -114,7 +114,7 @@ Una vez tenemos las vistas definidas, crearemos los flujos que tendrá la aplica
 
 A continuación adjunto el video con los flujos totales y cual será el flujo total de la aplicación, haciendo que los mockups se conviertan interactivamente en una aplicacion básica virtual.
 
-![Video flujos](img/MockUp_1.gif)
+![Video flujos](img/mockUp_1.gif)
 
 ![Video flujos continuacion](img/MockUp_2.gif)
 
