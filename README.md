@@ -78,7 +78,7 @@ En la primera columna de la tabla encontraremos el análisis interno y en la seg
 
 ### Planificación del proyecto
 
-![Gantt Proyecto](img/Gantt.png)
+![Gantt Proyecto](img/Gantt.PNG)
 
 # ANÁLISIS Y DISEÑO
 
