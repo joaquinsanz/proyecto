@@ -16,11 +16,11 @@
     <br>
     <br>
     <label for="participantes">Participantes</label>
-    <select class="form-control" name="participantes" >
+    <select class="form-control" id="participantes" name="participantes" >
     <option></option>
     @foreach  ($users as $user)
         <!--TODO-->
-        <option value="{{ $user->id }}" {{ $user->id == old('participantes') ? 'selected="selected"'->count():''}}>{{ $user->name }}</option>
+        <option value="{{ $user->id }}" {{ $user->id == old('participantes') ? 'selected="selected"':''}}>{{ $user->name }}</option>
        
     @endforeach
     </select>
