@@ -16,7 +16,7 @@ class CreateListasTable extends Migration
         Schema::create('listas', function (Blueprint $table) {
             $table->id();
             $table->text('name');
-            $table->integer('participantes');
+            $table->text('participantes');
             $table->float('saldo', 8, 2);;
             $table->timestamps();
         });

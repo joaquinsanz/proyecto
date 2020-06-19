@@ -32,12 +32,11 @@
                         @endif
 
 
-                        <p>Formulario de contacto: </p>
 
                         <div class="container">
 
 
-                            <h1>Contact US Form</h1>
+                            <h1>Formulario de contacto:</h1>
 
                             @if(Session::has('success'))
 
@@ -55,10 +54,9 @@
 
                             <div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
 
-                                {!! Form::label('Name:') !!}
+                                {!! Form::label('Nombre:') !!}
 
-                                {!! Form::text('name', old('name'), ['class'=>'form-control', 'placeholder'=>'Enter
-                                Name']) !!}
+                                {!! Form::text('name', old('name'), ['class'=>'form-control', 'placeholder'=>'Meter nombre']) !!}
 
                                 <span class="text-danger">{{ $errors->first('name') }}</span>
 
@@ -68,23 +66,23 @@
                                 {!! Form::label('Email:') !!}
 
                                 {!! Form::text('email', old('email'), ['class'=>'form-control',
-                                'placeholder'=>'Enter Email']) !!}
+                                'placeholder'=>'Escribe tu Email']) !!}
                                 <span class="text-danger">{{ $errors->first('email') }}</span>
 
                             </div>
 
                             <div class="form-group {{ $errors->has('message') ? 'has-error' : '' }}">
 
-                                {!! Form::label('Message:') !!}
+                                {!! Form::label('Mensaje:') !!}
 
                                 {!! Form::textarea('message', old('message'), ['class'=>'form-control',
-                                'placeholder'=>'Enter Message']) !!}
+                                'placeholder'=>'Escribe tu mensaje']) !!}
 
                                 <span class="text-danger">{{ $errors->first('message') }}</span>
                             </div>
 
                             <div class="form-group">
-                                <button class="btn btn-success">Contact US!</button>
+                                <button class="btn btn-success">Contáctanos!</button>
 
                             </div>
 
