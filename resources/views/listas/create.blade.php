@@ -7,7 +7,9 @@
     <label for="name">Nombre</label>
     <input type="text" name="name" value="{{ old('name') }}">
     {{$errors->first('name')}}
-   
+    <label for="descripcion">Descripcion</label>
+    <input type="text" name="descripcion" value="{{ old('descripcion') }}">
+    {{$errors->first('descripcion')}}
     <br>
     <br>
     <label for="saldo">Precio</label>

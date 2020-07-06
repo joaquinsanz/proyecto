@@ -52,6 +52,7 @@ class ListaController extends Controller
 
         $lista = new Lista();
         $lista->name = $request->name;
+        $lista->descripcion = $request->descripcion;
         $lista->saldo = $request->saldo;
         $lista->participantes = $request->participantes;
         $lista->save();

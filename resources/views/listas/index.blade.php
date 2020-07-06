@@ -29,6 +29,7 @@
                             <tr>
                                 <th>Id</th>
                                 <th>Nombre</th>
+                                <th>Descripocion</th>
                                 <th>Numero de paticipantes</th>
                                 <th>Saldo</th>
                             </tr>
@@ -37,6 +38,7 @@
                             <tr>
                                 <td>{{ $lista->id }}</td>
                                 <td>{{ $lista->name }}</td>
+                                <td>{{ $lista->descripcion }}</td>
                                 <td>{{ $lista->paticipantes }}</td>
                                 <td>{{ $lista->saldo }}</td>
                                 @can('viewAny',$lista)
