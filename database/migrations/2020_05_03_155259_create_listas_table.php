@@ -17,12 +17,11 @@ class CreateListasTable extends Migration
             $table->increments('id');
             $table->string('name')->unique();
             $table->string('descripcion');
-            $table->integer('participantes');
+            $table->json('participantes');
             $table->float('saldo', 8, 2);
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *

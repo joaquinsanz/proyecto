@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Lista extends Model
 {
     protected $fillable = [
-        'name','descripcion', 'participantes', 'saldo'
+        'name', 'descripcion', 'saldo'
+    ];
+    protected $casts = [
+        'participantes' => 'array'
     ];
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Lista;
 use App\User;
 use Illuminate\Http\Request;
+use PhpParser\Node\Stmt\Foreach_;
 
 class ListaController extends Controller
 {
@@ -54,7 +55,9 @@ class ListaController extends Controller
         $lista->name = $request->name;
         $lista->descripcion = $request->descripcion;
         $lista->saldo = $request->saldo;
-        $lista->participantes = $request->participantes;
+
+        //$lista->participantes = $lista->users->attach($request->participantes);
+        $lista->participantes =  $request->participantes;
         $lista->save();
         $listas = Lista::paginate();
         return view('listas.index', ['listas' => $listas]);

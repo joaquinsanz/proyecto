@@ -18,11 +18,11 @@
     <br>
     <br>
     <label for="participantes">Participantes</label>
-    <select class="form-control" multiple="multiple" name="participantes" id="participantes" >
+    <select class="form-control" multiple="multiple" name="participantes[]" id="participantes" >
     @foreach  ($users as $user)
         <!--TODO-->
-        <option value="{{ $user->id }}" {{ $user->id == old('participantes') ? 'selected="selected"':''}}>{{ $user->name }}</option>
-       
+        <option value="{{ $user->id }}">{{ $user->name }}</option>
+        
     @endforeach
     </select>
    
